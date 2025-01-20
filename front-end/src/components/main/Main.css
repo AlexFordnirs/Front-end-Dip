@@ -1,0 +1,256 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    font-family: "Arial", sans-serif;
+    color: #333;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero-btn {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.start-journey {
+    background-color: #0168D9;
+    color: #fff;
+}
+
+.start-journey:hover {
+    background-color: #0257B5;
+}
+
+.get-template {
+    background-color: #fff;
+    color: #0168D9;
+    border: 2px solid #0168D9;
+}
+
+.get-template:hover {
+    background-color: #0168D9;
+    color: #fff;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.stats-item {
+    text-align: center;
+}
+
+.stats-item h2 {
+    font-size: 2.5rem;
+    color: #0168D9;
+    margin-bottom: 10px;
+}
+
+.stats-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #0168D9;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* CTA / Support Section */
+.cta-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: #0168D9;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0257B5;
+}
+
+/* Grammarzone Section */
+.grammarzone-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.grammarzone-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.grammarzone-section p {
+    font-size: 1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+/* Блок разработчика */
+.developer-section {
+    /* Верхний «объёмный» блок */
+    background-color: #3068AF; /* Синий фон */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 0;
+    /* Можно добавить тень, если хотите:
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    */
+}
+
+.developer-header {
+    background-color: #e4e4e4; /* Светлая полоска сверху */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5);
+}
+
+.developer-header h2 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.developer-content {
+    /* Секция с фотографией и именем */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.developer-photo {
+    width: 150px;       /* Регулируйте по вкусу */
+    height: 150px;
+    border-radius: 50%; /* Круглая фотография */
+    object-fit: cover;  /* Чтобы фото не искажалось */
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+
+.developer-name {
+    color: #fff;        /* Текст на синем фоне */
+    font-size: 1.2rem;
+    font-weight: bold;
+}

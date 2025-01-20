@@ -1,0 +1,179 @@
+/* Общие настройки */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Фон с текстурой */
+html {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* Основной заголовок */
+.main-head {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(235, 235, 235, 255);
+    box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 255);
+    color: rgba(35, 101, 213, 0.86);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-head:hover {
+    text-shadow: 0px 0px 5px rgba(35, 101, 213, 0.86);
+    transition: 0.3s;
+}
+
+/* Навигационная панель */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.navbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: unset;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    height: 35px;
+    width: 15%;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.navbutton:hover {
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* Основной контейнер теста */
+.test-main-cont {
+    min-height: 91.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Контейнер теста */
+.test-test-cont {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Название теста */
+.test-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Инструкции */
+.test-instructions {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Контейнер вопросов */
+.answers-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Блок вопроса */
+.answer-row {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s;
+}
+
+/* Анимация при наведении */
+.answer-row:hover {
+    transform: scale(1.02);
+}
+
+/* Текст вопроса */
+.answer-num {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+}
+
+/* Поле ввода */
+.question-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    outline: none;
+}
+
+/* Поле ввода: фокус */
+.question-input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Кнопка отправки */
+.check-btn {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+/* Кнопка отправки: наведение */
+.check-btn:hover {
+    background: linear-gradient(to right, #5b86e5, #36d1dc);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Результат */
+.result-display {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #00ffcc;
+}

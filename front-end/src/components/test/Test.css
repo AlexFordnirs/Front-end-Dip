@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgba(255, 255, 255, 255);
+}
+
+.main-head {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(235, 235, 235, 255);
+    box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 255);
+    color: rgba(35, 101, 213, 0.86);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-head:hover{
+    text-shadow: 0px 0px 5px rgba(35, 101, 213, 0.86);
+    transition: 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.navbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: unset;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    height: 35px;
+    width: 15%;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+.navbutton:hover{
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.test-main-cont {
+    min-height: 91.3vh;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(235, 235, 235, 255);
+    margin: 0 auto;
+}
+
+.test-test-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+}
+
+.answer-num{
+    display: flex;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.test-name{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.test-text {
+    margin-top: 20px;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.answers-cont{
+    height: fit-content;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.answer-row {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border-top: 1px solid #000;
+    width: 100%;
+}
+
+.row {
+    display: inline-block;
+    font-weight: normal;
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+}
+
+.check-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: bold;
+    height: 10vh;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.check-btn:hover{
+    cursor: pointer;
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
+}

@@ -1,0 +1,456 @@
+/* Общий фон и шрифты */
+.cyberpunk-background {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: "Orbitron", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cyberpunk-title {
+    color: #e94560;
+    text-shadow: 0 0 10px #e94560, 0 0 20px #ff00ff;
+    font-size: 3rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+/* Увеличиваем контейнер в 2 раза */
+.cyberpunk-container {
+    width: 90%;           /* Было 80%, теперь делаем 90% */
+    max-width: 2000px;    /* Было 1200px, теперь 2000px */
+    text-align: center;
+    padding: 40px;        /* немного увеличили padding (было 20px) */
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px #e94560, 0 0 25px #ff00ff;
+    margin-top: 30px;
+}
+
+/* Выбор опции (Тренировка или Тесты) */
+.cyberpunk-task-selector h2 {
+    font-size: 1.8rem;
+    color: #00adb5;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.task-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cyberpunk-button {
+    padding: 15px 30px;
+    background: #393e46;
+    color: #00adb5;
+    border: 2px solid #00adb5;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00adb5, 0 0 20px #00adb5;
+    text-transform: uppercase;
+}
+.cyberpunk-button:hover {
+    background: #00adb5;
+    color: #393e46;
+    box-shadow: 0 0 15px #00adb5, 0 0 30px #00adb5;
+}
+.cyberpunk-button.selected {
+    background: #00adb5;
+    color: #393e46;
+    box-shadow: 0 0 20px #00adb5, 0 0 40px #00adb5;
+}
+
+/* --- ТРЕНИРОВКА (TRAINING) --- */
+.training-container {
+    margin-top: 30px;
+}
+.training-container h2 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Блок с инпутами (увеличим контраст и добавим неон-эффект) */
+.training-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* немножко больше пространства */
+    margin-bottom: 20px;
+}
+
+.training-container input,
+.training-container select {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ff5722;
+    background: #111318; /* чуть темнее */
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722;
+    transition: all 0.3s ease;
+}
+.training-container input:focus,
+.training-container select:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 15px #e94560, 0 0 30px #ff00ff;
+}
+
+.training-container button {
+    padding: 12px 25px;
+    background: #e94560;
+    color: #ffffff;
+    border: 2px solid #e94560;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #e94560, 0 0 40px #f08a5d;
+}
+.training-container button:hover {
+    background: #f08a5d;
+    border-color: #f08a5d;
+    box-shadow: 0 0 20px #f08a5d, 0 0 50px #ff00ff;
+}
+
+/* Блок, где чат слева, грамматика справа */
+.training-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Окно чата (левая часть) */
+.conversation-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Увеличим высоту чата */
+.messages {
+    width: 90%;
+    height: 500px; /* Было 300px, делаем крупнее */
+    background: #222831;
+    color: #ffffff;
+    overflow-y: auto;
+    border: 2px solid #8e44ad;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px #8e44ad, 0 0 30px #00adb5;
+    margin-bottom: 15px;
+}
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.message.ai {
+    background: #393e46;
+    color: #00adb5;
+    text-align: left;
+}
+.message.user {
+    background: #e94560;
+    color: #ffffff;
+    text-align: right;
+}
+
+/* Ввод нового сообщения (под чатом) */
+.message-input {
+    width: 90%;
+    display: flex;
+    gap: 10px;
+}
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #e94560;
+    background: #222831;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #e94560, 0 0 20px #f08a5d;
+}
+.message-input input:focus {
+    outline: none;
+    border-color: #f08a5d;
+    box-shadow: 0 0 15px #f08a5d, 0 0 40px #ff00ff;
+}
+.message-input button {
+    padding: 10px 20px;
+    background: #e94560;
+    color: #ffffff;
+    border: 2px solid #e94560;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #e94560, 0 0 40px #f08a5d;
+}
+.message-input button:hover {
+    background: #f08a5d;
+    border-color: #f08a5d;
+    box-shadow: 0 0 20px #f08a5d, 0 0 50px #ff00ff;
+}
+
+/* Окно грамматических подсказок (справа) */
+.grammar-feedback-container {
+    flex: 1;
+    background: #222831;
+    border: 2px solid #00adb5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px #00adb5, 0 0 30px #e94560;
+    /* Увеличим высоту, чтобы совпадала с чатом */
+    min-height: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.grammar-feedback-container h4 {
+    margin-bottom: 10px;
+    color: #00adb5;
+    text-transform: uppercase;
+}
+.feedback-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.feedback-item {
+    background: #393e46;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px #00adb5;
+    line-height: 1.4;
+}
+
+/* --- ТЕСТЫ (TESTS) --- */
+.test-container {
+    margin-top: 30px;
+}
+.test-container h2 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.test-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.test-container input,
+.test-container select {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ff5722;
+    background: #111318;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722;
+    transition: all 0.3s ease;
+}
+.test-container input:focus,
+.test-container select:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 15px #e94560, 0 0 30px #ff00ff;
+}
+
+.test-container button {
+    padding: 12px 25px;
+    background: #e94560;
+    color: #ffffff;
+    border: 2px solid #e94560;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #e94560, 0 0 40px #f08a5d;
+}
+.test-container button:hover {
+    background: #f08a5d;
+    border-color: #f08a5d;
+    box-shadow: 0 0 20px #f08a5d, 0 0 50px #ff00ff;
+}
+
+/* Отображение полученного задания */
+.test-response-container {
+    margin-top: 20px;
+    background: #222831;
+    border: 2px solid #8e44ad;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px #8e44ad, 0 0 30px #00adb5;
+    text-align: left;
+}
+
+/* Текст для чтения (Reading) */
+.reading-text {
+    margin-bottom: 20px;
+    background: #393e46;
+    border-radius: 5px;
+    padding: 10px;
+    color: #00adb5;
+    box-shadow: 0 0 5px #00adb5;
+}
+
+/* Вопрос */
+.test-question {
+    margin: 20px 0;
+    background: #393e46;
+    padding: 10px;
+    border-radius: 5px;
+    color: #00adb5;
+    box-shadow: 0 0 5px #00adb5;
+}
+.test-question p {
+    margin-bottom: 10px;
+}
+
+/* Радио-кнопки */
+.test-question label {
+    cursor: pointer;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.test-question input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Результаты теста */
+.test-result-container {
+    margin-top: 20px;
+    background: #222831;
+    border: 2px solid #00adb5;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 15px #00adb5, 0 0 30px #e94560;
+    text-align: left;
+}
+.test-result-container h3 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+.test-result-container ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff5722;
+    text-shadow: 0 0 10px #ff5722, 0 0 30px #e94560;
+}
+/* === Пример прямого целевого стиля для topic, character, difficulty === */
+/* (Используем общую киберпанк-стилистику) */
+
+input[name="topic"],
+input[name="character"],
+select[name="difficulty"] {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ff5722;
+    background: #111318;  /* Тёмный фон */
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722;
+    transition: all 0.3s ease;
+    margin-bottom: 10px; /* небольшой отступ снизу */
+}
+
+/* При фокусе — подсвечиваем по-киберпанковски */
+input[name="topic"]:focus,
+input[name="character"]:focus,
+select[name="difficulty"]:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 15px #e94560, 0 0 30px #ff00ff;
+}
+
+/* Кнопка Start Conversation */
+button.start-conversation {
+    padding: 12px 25px;
+    background: #e94560;
+    color: #ffffff;
+    border: 2px solid #e94560;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #e94560, 0 0 40px #f08a5d;
+    text-transform: uppercase;
+    margin-top: 10px; /* небольшой отступ сверху */
+}
+
+/* При наведении — эффект свечения */
+button.start-conversation:hover {
+    background: #f08a5d;
+    border-color: #f08a5d;
+    box-shadow: 0 0 20px #f08a5d, 0 0 50px #ff00ff;
+}
+/* Стили для полей genre и testType в киберпанк-стиле */
+input[name="genre"],
+select[name="testType"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #ff5722;
+    background: #111318; /* Тёмный фон */
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722;
+    transition: all 0.3s ease;
+}
+
+/* Подсветка при фокусе */
+input[name="genre"]:focus,
+select[name="testType"]:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 15px #e94560, 0 0 30px #ff00ff;
+}
+/* Кнопка Start Test */
+button.start-test {
+    padding: 12px 25px;
+    background: #e94560;
+    color: #ffffff;
+    border: 2px solid #e94560;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #e94560, 0 0 40px #f08a5d;
+    text-transform: uppercase;
+    margin-top: 10px; /* небольшой отступ сверху */
+}
+
+/* При наведении — эффект свечения */
+button.start-test:hover {
+    background: #f08a5d;
+    border-color: #f08a5d;
+    box-shadow: 0 0 20px #f08a5d, 0 0 50px #ff00ff;
+}

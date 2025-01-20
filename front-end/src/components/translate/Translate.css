@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgba(255, 255, 255, 255);
+}
+
+.main-head {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(235, 235, 235, 255);
+    box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 255);
+    color: rgba(35, 101, 213, 0.86);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-head:hover{
+    text-shadow: 0px 0px 5px rgba(35, 101, 213, 0.86);
+    transition: 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.navbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: unset;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    height: 35px;
+    width: 15%;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+.navbutton:hover{
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.main-cont{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.level-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #2b5876, #4e4376); /* Градиентный фон */
+    height: 91.3vh;
+    width: 15%;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1); /* Тень для разделения */
+}
+
+.level-cont div {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.level-cont div:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Увеличение прозрачности при наведении */
+    transform: scale(1.1); /* Эффект увеличения */
+}
+
+.level-btn{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.level-btn:hover{
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.test-cont {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 91.3vh;
+    width: 100%;
+    background: linear-gradient(180deg, #d7e1ec, #92a9bd); /* Градиентный фон */
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+    gap: 20px; /* Расстояние между элементами */
+}
+
+.test-cont a {
+    display: inline-block;
+    width: 200px; /* Фиксированная ширина */
+    height: 100px; /* Фиксированная высота */
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.test-cont a:hover {
+    transform: translateY(-10px); /* Подъем при наведении */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 1); /* Ярче при наведении */
+}
+
+.test-btn{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: fit-content;
+    width: 15%;
+    background-color: rgb(196, 196, 196);
+    color: #000000;
+    font-weight: bold;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 2.5em;
+    margin: 15px 15px 15px;
+}
+
+.test-btn:hover{
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    transition: 0.3s;
+}

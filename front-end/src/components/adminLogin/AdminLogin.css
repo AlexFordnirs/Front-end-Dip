@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgba(255, 255, 255, 255);
+}
+
+.main-head {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(235, 235, 235, 255);
+    box-shadow: 0px 5px 5px 0px rgba(235, 235, 235, 255);
+    color: rgba(35, 101, 213, 0.86);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-head:hover {
+    text-shadow: 0px 0px 5px rgba(35, 101, 213, 0.86);
+    transition: 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.navbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: unset;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    height: 35px;
+    width: 15%;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.navbutton:hover {
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.admin-main-cont {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.admin-form-cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+}
+
+label{
+    margin-top: 10px;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+input{
+    height: 3vh;
+    width: 40vh;
+    font-size: 2vh;
+}
+
+.admin-submit-btn{
+    margin-top: 30px;
+    height: 4vh;
+    transition: 0.3s;
+    background-color: rgba(235, 235, 235, 255);
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.admin-submit-btn:hover{
+    cursor: pointer;
+    background-color: rgba(35, 101, 213, 0.86);
+    border: 1px solid rgba(35, 101, 213, 0.86);
+    box-shadow: 0px 0px 10px 0px rgba(35, 101, 213, 0.86);
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.admin-register-form{
+    margin-top: 30px;
+    font-size: 1vh;
+}
+
+.admin-register-btn{
+    font-size: 2vh;
+}
